@@ -59,8 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Scripts\WalkingScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/UnityProjects/SustainableGame/Sustainable Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
