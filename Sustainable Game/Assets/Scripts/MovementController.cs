@@ -7,6 +7,9 @@ public class MovementController : MonoBehaviour
     [SerializeField] private string horizontalInputName;
     [SerializeField] private string verticalInputName;
     [SerializeField] private float movementSpeed;
+    
+    [SerializeField] private float normalSpeed;
+    [SerializeField] private float boostedSpeed; 
 
     private CharacterController charController;
 
@@ -21,13 +24,31 @@ public class MovementController : MonoBehaviour
         charController = GetComponent<CharacterController>();
     }
 
+    private void Start()
+    {
+        normalSpeed = movementSpeed;
+    }
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+        
         PlayerMovement();
     }
 
     private void PlayerMovement()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            movementSpeed = boostedSpeed;
+        } else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            movementSpeed = normalSpeed;
+        }
+        
         float vertInput = Input.GetAxis(verticalInputName) * movementSpeed * Time.deltaTime;
         float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed * Time.deltaTime;
 

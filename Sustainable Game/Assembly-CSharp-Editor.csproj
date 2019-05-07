@@ -321,6 +321,9 @@
     <Reference Include="UnityEditor.UWP.Extensions">
       <HintPath>E:/Unity/2019.1.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>E:/UnityProjects/SustainableGame/Sustainable Game/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>E:/UnityProjects/SustainableGame/Sustainable Game/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -338,9 +341,6 @@
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>E:/UnityProjects/SustainableGame/Sustainable Game/Library/PackageCache/com.unity.render-pipelines.high-definition@5.7.2-preview/Editor/Core/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>E:/UnityProjects/SustainableGame/Sustainable Game/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>E:/Unity/2019.1.1f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
