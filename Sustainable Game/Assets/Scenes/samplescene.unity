@@ -748,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220365401}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0042, y: 0.1317, z: -0.008}
+  m_LocalPosition: {x: 0.0042, y: 0.223, z: -0.008}
   m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 0.16666667}
   m_Children: []
   m_Father: {fileID: 269266726}
@@ -977,6 +977,18 @@ PrefabInstance:
     - target: {fileID: 100078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_Name
       value: Skeleton@Skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100074, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4259,8 +4271,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777258911}
   m_LocalRotation: {x: -0.3026046, y: -0, z: -0, w: 0.95311624}
-  m_LocalPosition: {x: -9.03, y: 4.69, z: 4.02}
-  m_LocalScale: {x: 1.8809698, y: 4.1715426, z: 0.1171933}
+  m_LocalPosition: {x: -9.03, y: 4.5, z: 4.15}
+  m_LocalScale: {x: 1.8809698, y: 4.710349, z: 0.1171933}
   m_Children: []
   m_Father: {fileID: 919273666}
   m_RootOrder: 44
