@@ -2699,7 +2699,7 @@ GameObject:
   - component: {fileID: 446456854}
   m_Layer: 0
   m_Name: Greenhouse
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 619082233}
   m_Layer: 0
   m_Name: Wind Turbine
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4041,7 +4041,7 @@ GameObject:
   - component: {fileID: 939962994}
   m_Layer: 0
   m_Name: Recycle Bins
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4901,7 +4901,7 @@ GameObject:
   - component: {fileID: 1006705245}
   m_Layer: 0
   m_Name: Greenhouse
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5157,7 +5157,7 @@ GameObject:
   - component: {fileID: 1105023248}
   m_Layer: 0
   m_Name: Rainwater Collection Tank
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5667,8 +5667,8 @@ GameObject:
   - component: {fileID: 1127658024}
   - component: {fileID: 1127658023}
   m_Layer: 0
-  m_Name: Solar Panel (1)
-  m_TagString: Collisions
+  m_Name: Solar Panel
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5681,7 +5681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127658021}
   m_LocalRotation: {x: 0, y: 0, z: -0.3821673, w: 0.9240932}
-  m_LocalPosition: {x: -8.01, y: 10.71, z: 3.97}
+  m_LocalPosition: {x: -8.03, y: 10.73, z: 3.97}
   m_LocalScale: {x: 0.09891194, y: 6.8922286, z: 5.463754}
   m_Children: []
   m_Father: {fileID: 919273666}
@@ -5698,8 +5698,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 7.6423125, y: 1, z: 1}
+  m_Center: {x: -3.3211405, y: 9.946524e-10, z: 0}
 --- !u!33 &1127658024
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6533,7 +6533,7 @@ GameObject:
   - component: {fileID: 1280562170}
   m_Layer: 0
   m_Name: Greenhouse
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10115,7 +10115,7 @@ GameObject:
   - component: {fileID: 1844052708}
   m_Layer: 0
   m_Name: Solar Panel
-  m_TagString: Collisions
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10145,8 +10145,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8.737328, y: 1, z: 1}
+  m_Center: {x: 3.8686464, y: -1.0100898e-10, z: 0}
 --- !u!33 &1844052709
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10406,7 +10406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 220365405}
-  objectGame: []
+  textures:
+  - {fileID: 2800000, guid: 034617ca098850641a1136cdb46a61b7, type: 3}
 --- !u!114 &1880592971
 MonoBehaviour:
   m_ObjectHideFlags: 0
