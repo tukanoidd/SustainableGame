@@ -30,7 +30,7 @@ public class PlayerInteraction : MonoBehaviour
 
         Vector3 interactionRayEndPoint = playerForwardDirection * interactionRayLength;
         
-        Debug.DrawLine(transform.position, interactionRayEndPoint);
+        Debug.DrawRay(transform.position, interactionRayEndPoint);
         Debug.Log(playerPosition);
         Debug.Log(playerForwardDirection);
         Debug.Log(interactionRayEndPoint);
@@ -40,10 +40,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             GameObject hitGameObject = rayInteractionHit.transform.gameObject;
             string hitFeedback = hitGameObject.name;
-            if (hitGameObject.tag != "Collisions")
-            {
-                Debug.Log(hitFeedback);    
-            }
+            Debug.Log(hitFeedback);
         }
     }
 }
