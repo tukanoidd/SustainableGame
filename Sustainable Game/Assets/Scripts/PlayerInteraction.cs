@@ -8,6 +8,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private Dictionary<string, Texture> sustThings = new Dictionary<string, Texture>();
     [SerializeField] private Texture[] textures;
+    [SerializeField] private float interactionRayLength = 100.0f;
     
     private bool showInteraction = false;
     private bool showInteractionInfo = false;
@@ -17,7 +18,11 @@ public class PlayerInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sustThings.Add("Solar Panel", textures[0]);
+        sustThings.Add("Greenhouse", textures[0]);
+        sustThings.Add("Solar Panel", textures[1]);
+        sustThings.Add("Wind Turbine", textures[2]);
+        sustThings.Add("Rainwater Collector", textures[3]);
+        sustThings.Add("Recycle Bins", textures[4]);
     }
 
     // Update is called once per frame
@@ -75,7 +80,6 @@ public class PlayerInteraction : MonoBehaviour
        
         Ray interactionRay = new Ray(playerPosition, playerForwardDirection);
         RaycastHit rayInteractionHit;
-        float interactionRayLength = 100.0f;
 
         Vector3 interactionRayEndPoint = playerForwardDirection * interactionRayLength;
 
@@ -88,6 +92,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 showInteraction = true;
                 interactionName = hitGameObject.name;
+                Debug.Log(interactionName);
             }
             else
             {

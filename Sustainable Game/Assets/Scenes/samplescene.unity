@@ -3057,8 +3057,8 @@ GameObject:
   - component: {fileID: 565083547}
   - component: {fileID: 565083546}
   m_Layer: 0
-  m_Name: Cube (40)
-  m_TagString: Collisions
+  m_Name: Greenhouse
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5156,7 +5156,7 @@ GameObject:
   - component: {fileID: 1105023249}
   - component: {fileID: 1105023248}
   m_Layer: 0
-  m_Name: Rainwater Collection Tank
+  m_Name: Rainwater Collector
   m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5773,8 +5773,8 @@ GameObject:
   - component: {fileID: 1207391693}
   - component: {fileID: 1207391692}
   m_Layer: 0
-  m_Name: Cube (41)
-  m_TagString: Collisions
+  m_Name: Greenhouse
+  m_TagString: SustainableThings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10407,7 +10407,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 220365405}
   textures:
-  - {fileID: 2800000, guid: 034617ca098850641a1136cdb46a61b7, type: 3}
+  - {fileID: 2800000, guid: 871245fd20680f94e906f732c16045e5, type: 3}
+  - {fileID: 2800000, guid: 04fe50805c118354bae2564cb2c77be9, type: 3}
+  - {fileID: 2800000, guid: c59abdd2ffae60145bc4d0281ca1468d, type: 3}
+  - {fileID: 2800000, guid: 791d5117e2ac421449666ebb146dc9b0, type: 3}
+  - {fileID: 2800000, guid: 42cf529e2ee70884db63ff6b5b57155e, type: 3}
+  interactionRayLength: 300
 --- !u!114 &1880592971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10422,9 +10427,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInputName: Horizontal
   verticalInputName: Vertical
-  movementSpeed: 500
-  normalSpeed: 500
-  boostedSpeed: 700
+  movementSpeed: 250
+  normalSpeed: 250
+  boostedSpeed: 500
   jumpFallOff:
     serializedVersion: 2
     m_Curve:
@@ -10449,7 +10454,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  jumpMultiplier: 10
+  jumpMultiplier: 5
   jumpKey: 32
 --- !u!143 &1880592972
 CharacterController:
